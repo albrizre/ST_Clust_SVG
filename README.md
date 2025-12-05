@@ -1,0 +1,1 @@
+R codes and files for fitting the models proposed in the paper *Biologically-informed clustering of gene expression density patterns and identification of spatially variable genes*, by Álvaro Briz-Redón and Alessandra Menafoglio, published in Journal of Agricultural, Biological, and Environmental Statistics.
