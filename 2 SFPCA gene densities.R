@@ -17,19 +17,17 @@ library(reshape)
 library(zCompositions)
 library(gridExtra)
 library(grid)
-options(scipen=10000)
 
 # Set your working directory
-setwd("G:/Mi unidad/Investigacion/Milano/SVG density/Github/")
-setwd("...")
+# setwd("...")
 
 # Brain data loading
-# brain <- LoadData("stxBrain", type = "anterior1")
-load("Data/brain.rda")
+# InstallData("stxBrain") 
+brain <- LoadData("stxBrain", type = "anterior1")
 
-# Extract counts and coordinates
-matrix <- as.matrix(brain@assays$Spatial@counts)
-coordinates <- cbind(brain@images$anterior1@coordinates$row,brain@images$anterior1@coordinates$col)
+# Load matrix and coordinates
+load("matrix_genes.rda")
+load("coordinates_spots.rda")
 
 # Load clr values
 load("density_values_clr.rda")
