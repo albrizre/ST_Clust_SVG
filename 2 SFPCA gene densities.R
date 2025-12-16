@@ -23,7 +23,7 @@ library(grid)
 
 # Brain data loading
 # InstallData("stxBrain") 
-brain <- LoadData("stxBrain", type = "anterior1")
+# brain <- LoadData("stxBrain", type = "anterior1")
 
 # Load matrix and coordinates
 load("matrix_genes.rda")
@@ -194,3 +194,4 @@ for (j in 1:K){
 }
 plot(sc_d0)
 save(sc_d0,file = "sc_d0.rda")
+
